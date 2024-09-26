@@ -39,7 +39,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <ul>
         <li><a href="/" class="<?= trim($_SERVER['REQUEST_URI'], '/') === '' ? 'active' : null ?>"><i class="fa-solid fa-magnifying-glass"></i>Поиск</a></li>
         <li><a href="/article" class="<?= strstr(trim($_SERVER['REQUEST_URI'], '/'), 'article') ? 'active' : null ?>"><i class="fa-regular fa-file-lines"></i>Статьи</a></li>
-        <li><a href="/favorites" class="<?= strstr(trim($_SERVER['REQUEST_URI'], '/'), 'favorite') ? 'active' : null ?>"><i class="fa-regular fa-heart"></i>Избранное</a></li>
+        <li><a href="/favorite" class="<?= strstr(trim($_SERVER['REQUEST_URI'], '/'), 'favorite') ? 'active' : null ?>"><i class="fa-regular fa-heart"></i>Избранное</a></li>
         <li><a href="/user" class="<?= strstr(trim($_SERVER['REQUEST_URI'], '/'), 'user') ? 'active' : null ?>"><i class="fa-regular fa-user"></i>Профиль</a></li>
     </ul>
 </footer>

@@ -8,6 +8,10 @@ class FavoriteController extends Controller
 {
     public function actionIndex($page=null)
     {
+        if (Yii::$app->user->isGuest) {
+            return $this->redirect('user/authorization');
+        }
+
         function isMobile() {
             return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
         }
