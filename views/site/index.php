@@ -37,55 +37,55 @@
     <div class="swiper-container">
         <div class="swiper-wrapper wrapper_mobile">
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gena69856479fd6f1a7397a7dc0e3d850a4.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
             </div>
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gen33bee3a1294b4710ea71d170820cc2b8.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
             </div>
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gen81b2624cd9fe7452ff0be51cc4d10c5a.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
             </div>
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gen18e1a2aec415eca08d05c5e1061c94e9.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
             </div>
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gen2f372dfa8a0edd45147b64a99a4c9634.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
             </div>
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gen309456d5e3834026be258b20ee7c7659.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
             </div>
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gen49e6261bcf8e965bd9f00fde8a6c4561.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
             </div>
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gen5c01c58b74e5f094f5328272a616ae94.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
             </div>
             <div class="user swiper-slide">
-                <img src="" alt="user_photo">
+                <img src="https://this-person-does-not-exist.com/img/avatar-gena2f27cba7ef856e9b57fa13497bde93a.jpg" alt="user_photo">
                 <h3 class="name">Анжела Перл</h3>
                 <span class="profession">Астролог</span>
                 <span class="rating">5,0 <i class="fa-regular fa-star"></i></span>
