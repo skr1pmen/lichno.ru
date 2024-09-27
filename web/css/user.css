@@ -151,6 +151,7 @@
         }
     }
     .notification {
+        margin: 15px 1em 0 0;
         color: var(--secondary-color);
         display: flex;
         gap: 1.87em;
@@ -166,7 +167,7 @@
 
     .main_page {
         grid-area: 2 / 2 / 3 / 3;
-        width: 100%;
+        width: 98.5%;
         background: var(--block-color);
         border-radius: clamp(0.938rem, 0.5rem + 2.19vw, 3.125rem);
         display: grid;

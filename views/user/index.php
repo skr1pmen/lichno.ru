@@ -17,7 +17,7 @@
                 <li><a href="/user/index?page=orders" class="<?= $page === 'orders' ? 'active' : null ?>">Заказы</a></li>
                 <li><a href="" class="tmp">Служба поддержки</a></li>
             </ul>
-            <?= Yii::$app->user->identity->is_executor ? '<a href="#" class="btn btn_active">Стать исполнителем</a>' : ''?>
+            <?= !Yii::$app->user->identity->is_executor ? '<a href="#" class="btn btn_active">Стать исполнителем</a>' : ''?>
         </header>
     <?php endif; ?>
     <div class="notification">

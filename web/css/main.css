@@ -59,7 +59,8 @@ header {
     .banners {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 50px;
+        padding: 1em 4em;
 
         .banner {
             width: 100%;
