@@ -18,7 +18,7 @@
 
         .input {
             width: 100%;
-            font-size: 30px;
+            font-size: clamp(0.875rem, 0.511rem + 1.82vw, 1.875rem);
             padding: 14px 20px;
             border-radius: clamp(0.938rem, 0.5rem + 2.19vw, 3.125rem);
             border: none;
@@ -37,7 +37,7 @@
             width: inherit;
             justify-content: center;
             align-items: center;
-            gap: 180px;
+            gap: clamp(0.938rem, -2.813rem + 18.75vw, 11.25rem);
 
             a {
                 text-decoration: none;
@@ -50,15 +50,15 @@
             gap: 10px;
             user-select: none;
             cursor: pointer;
-            font-size: 30px;
+            font-size: clamp(0.875rem, 0.511rem + 1.82vw, 1.875rem);
 
             .checkbox {
                 display: none;
             }
 
             .custom_checkbox {
-                width: 33px;
-                height: 33px;
+                width: clamp(0.938rem, 0.528rem + 2.05vw, 2.063rem);
+                height: clamp(0.938rem, 0.528rem + 2.05vw, 2.063rem);
                 border-radius: 5px;
                 display: inline-block;
                 background: var(--body-color);
@@ -71,8 +71,8 @@
                 position: absolute;
                 padding: 15px;
                 font-size: 25px;
-                width: 33px;
-                height: 33px;
+                width: clamp(0.938rem, 0.528rem + 2.05vw, 2.063rem);
+                height: clamp(0.938rem, 0.528rem + 2.05vw, 2.063rem);
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%) scale(0);
@@ -90,7 +90,6 @@
         button, span {
             margin: 0 auto !important;
             display: block;
-            font-size: 30px;
 
             a {
                 text-decoration: none;
