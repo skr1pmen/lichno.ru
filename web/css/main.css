@@ -197,6 +197,16 @@ header {
         }
     }
 }
+.docs{
+    display: flex;
+    justify-content: center;
+    padding: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem) 0;
+    gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
+    a {
+        text-decoration: none;
+        color: var(--accent-color);
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .services {

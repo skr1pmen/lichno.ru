@@ -200,6 +200,11 @@
     </div>
 </div>
 
+<div class="docs">
+    <a href="/docs/policy">Политика конфиденциальности</a>
+    <a href="/docs/offer">Публичная оферта</a>
+</div>
+
 <script type="text/javascript">
     const checkSize = () => {
         let width = window.innerWidth,
