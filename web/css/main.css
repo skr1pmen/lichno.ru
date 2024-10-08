@@ -204,9 +204,15 @@ header {
     align-content: center;
     padding: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem) 0;
     gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
+    font-size: clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem);
     a {
         text-decoration: none;
         color: var(--accent-color);
+    }
+    .contacts {
+        display: flex;
+        flex-direction: row;
+        gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
     }
     div {
         text-align: center;
