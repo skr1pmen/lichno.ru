@@ -27,8 +27,8 @@
         </div>
 
         <div class="banners">
-            <img src="images/mini_banner_1.png" alt="banner" class="banner">
-            <img src="images/mini_banner_2.png" alt="banner" class="banner">
+            <a href="https://денежныйкод.рф"><img src="images/mini_banner_1.png" alt="banner" class="banner"></a>
+            <a href="https://t.me/test_architype_bot"><img src="images/mini_banner_2.png" alt="banner" class="banner"></a>
         </div>
     </div>
 </header>
