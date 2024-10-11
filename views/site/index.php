@@ -6,7 +6,7 @@
 ?>
 <header>
     <div class="top">
-        <a href="./" class=" logo"><img src="images/logo.png" alt="logo"></a>
+<!--        <a href="./" class=" logo"><img src="images/logo.png" alt="logo"></a>-->
         <div class="notification">
             <i class="fa-regular fa-bell"></i>
             <?php if (Yii::$app->user->isGuest): ?>
@@ -16,6 +16,7 @@
                 <a href="/user"><?= Yii::$app->user->identity->username ?></a>
             <?php endif; ?>
         </div>
+        <video src="images/main_banner.mp4" autoplay playsinline muted></video>
     </div>
     <div class="bottom">
         <input type="text" placeholder="Поиск">
@@ -24,10 +25,11 @@
                 <a href="#" class="btn"><?= $category['name'] ?></a>
             <?php endforeach; ?>
         </div>
-    </div>
-    <div class="banners">
-        <img src="" alt="banner" class="banner">
-        <img src="" alt="banner" class="banner">
+
+        <div class="banners">
+            <img src="images/mini_banner_1.png" alt="banner" class="banner">
+            <img src="images/mini_banner_2.png" alt="banner" class="banner">
+        </div>
     </div>
 </header>
 
@@ -171,29 +173,29 @@
     </div>
     <div class="items">
         <div class="item">
-            <img src="" alt="photo">
+            <img src="https://10.img.avito.st/image/1/1.bJ2WWba4wHSg8AJxwnRK4a_4wnIo-EJ84P3CdibwyH4g.zLePDvd3oakPKkjghiqrumKGVjIXux45sps5RUxLNPQ" alt="photo">
             <div class="info">
-                <span class="title">Название услуги</span>
-                <span class="username">Имя пользователя</span>
+                <span class="title">Таролог. Экстрасенс. Гадание.</span>
+                <span class="username">Эльвира В.</span>
                 <span class="price">5000 ₽</span>
             </div>
             <a href="#" class="btn btn_active">Подробнее об услуге</a>
         </div>
         <div class="item">
-            <img src="" alt="photo">
+            <img src="https://70.img.avito.st/image/1/1.B3JEXra4q5ty92meRnIrGVf_qZ36_ymTMvqpmfT3o5Hy.71BJdT4tqXAohfsD6VLXWGnKQ8S_RuKnN2zq_96WA4U" alt="photo">
             <div class="info">
-                <span class="title">Название услуги</span>
-                <span class="username">Имя пользователя</span>
-                <span class="price">5000 ₽</span>
+                <span class="title">Расклад таро Таролог</span>
+                <span class="username">Милана Г.</span>
+                <span class="price">2500 ₽</span>
             </div>
             <a href="#" class="btn btn_active">Подробнее об услуге</a>
         </div>
         <div class="item">
-            <img src="" alt="photo">
+            <img src="https://00.img.avito.st/image/1/1.vahYnra4EUFuN9NELujn0F08E0fmP5NJLjoTQ-g3GUvu.96mDLk3d6fSaLBNv1-0S4Ia9nmuEuNTDyfSTl-Akswc" alt="photo">
             <div class="info">
-                <span class="title">Название услуги</span>
-                <span class="username">Имя пользователя</span>
-                <span class="price">5000 ₽</span>
+                <span class="title">Гадание на картах</span>
+                <span class="username">Матрёна А.</span>
+                <span class="price">800 ₽</span>
             </div>
             <a href="#" class="btn btn_active">Подробнее об услуге</a>
         </div>

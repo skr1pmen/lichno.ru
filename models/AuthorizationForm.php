@@ -23,6 +23,14 @@ class AuthorizationForm extends Model
         ];
     }
 
+    public function attributeLabels()
+    {
+        return [
+            "login" => "Логин",
+            "password" => "Пароль"
+        ];
+    }
+
     public function validatePassword($attribute, $params)
     {
         if (!$this->hasErrors()) {

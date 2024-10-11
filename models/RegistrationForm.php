@@ -30,6 +30,20 @@ class RegistrationForm extends Model
         ];
     }
 
+    public function attributeLabels()
+    {
+        return [
+            "login" => "Логин",
+            "password" => "Пароль",
+            "passwordRepeat" => "Повторённые пароль",
+            "username" => "Имя Фамилия",
+            "phone" => "Номер телефона",
+            "email" => "Почта",
+            "is_executor" => "Роль",
+            "policy" => "Политика конфиденциальности",
+        ];
+    }
+
     public function validateLogin($attribute, $params)
     {
         if (!$this->hasErrors()) {
