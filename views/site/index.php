@@ -30,6 +30,18 @@
             <a href="https://денежныйкод.рф"><img src="images/mini_banner_1.png" alt="banner" class="banner"></a>
             <a href="https://t.me/test_architype_bot"><img src="images/mini_banner_2.png" alt="banner" class="banner"></a>
         </div>
+        <div class="banners_mobile">
+            <div class="swiper swiper-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://денежныйкод.рф"><img src="images/mini_banner_1.png" alt="banner" class="banner"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://t.me/test_architype_bot"><img src="images/mini_banner_2.png" alt="banner" class="banner"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 
@@ -248,6 +260,18 @@
         else {
             document.querySelector('.swiper-container').classList.add('mobile')
             document.querySelector('.wrapper_mobile').classList.remove('swiper-wrapper')
+
+            const swiper = new Swiper('.swiper-banner', {
+                speed: 400,
+                slidesPerView: 'auto', // or 'auto'
+                spaceBetween: 30,
+                grabCursor: false,
+                updateOnImagesReady: true,
+                autoplay: true,
+                centeredSlides: false,
+                loop: true,
+                pagination: true,
+            });
         }
     };
     window.addEventListener("resize", checkSize);

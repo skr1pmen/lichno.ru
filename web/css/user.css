@@ -506,6 +506,16 @@
     }
 }
 
+@media screen and (max-width: 1070px){
+    .categories{
+        grid-template-columns: 1fr !important;
+    }
+    .user_password {
+        div {
+            display: block !important;
+        }
+    }
+}
 @media screen and (max-width: 1024px) {
     .user_password {
         div {

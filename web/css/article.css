@@ -11,6 +11,7 @@
         .top {
             display: flex;
             justify-content: space-between;
+            flex-direction: row;
 
             .logo img {
                 width: clamp(4.688rem, 3.412rem + 6.38vw, 11.063rem);

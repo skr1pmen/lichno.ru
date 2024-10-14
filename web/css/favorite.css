@@ -97,7 +97,7 @@
         }
         .content {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(1fr, .5fr));
             grid-gap: 30px;
             article {
                 display: flex;
