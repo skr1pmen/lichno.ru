@@ -15,6 +15,7 @@
                     <a href="user/authorization">Вход</a>
                 <?php else: ?>
                     <a href="/user"><?= Yii::$app->user->identity->username ?></a>
+                    <a href="/user/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                 <?php endif; ?>
             </div>
         </div>

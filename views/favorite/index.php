@@ -16,6 +16,7 @@
     <div class="notification">
         <i class="fa-regular fa-bell"></i>
         <a href="/user"><?= Yii::$app->user->identity->username ?></a>
+        <a href="/user/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
     </div>
 
     <?php if ($page === 'users' || $page === 'all'): ?>

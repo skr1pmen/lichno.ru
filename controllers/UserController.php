@@ -57,6 +57,13 @@ class UserController extends Controller
         return $this->render('authorization' , ['model' => $model]);
     }
 
+    public function actionLogout()
+    {
+        Yii::$app->user->logout();
+
+        return $this->goHome();
+    }
+
     public function actionRegistration()
     {
         $this->view->title = 'Регистрация';
