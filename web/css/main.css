@@ -220,30 +220,57 @@ header {
         }
     }
 }
-.docs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    padding: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem) 0;
-    gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
-    font-size: clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem);
-    a {
-        text-decoration: none;
-        color: var(--accent-color);
-    }
-    .contacts {
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 26px;
+    width: min(1840px, 100%);
+    margin: 30px auto 0;
+    .docs{
         display: flex;
-        flex-direction: row;
-        gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
-    }
-    div {
-        text-align: center;
-        width: 100%;
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
+        gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
+        background: var(--block-color);
+        border-radius: clamp(1.25rem, 1.125rem + 0.63vw, 1.875rem);
+        img {
+            width: clamp(13.875rem, 13.097rem + 3.77vw, 17.625rem);
+            position: relative;
+            left: -37px;
+        }
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+            width: max-content;
+        }
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
+            padding-bottom: 20px;
+            font-size: clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem);
+        }
+        div {
+            text-align: center;
+            width: 100%;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        color: var(--secondary-color);
+        padding: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
     }
 }
 
@@ -313,6 +340,9 @@ header {
             /*    display: block;*/
             /*}*/
         }
+    }
+    .footer {
+        grid-template-columns: 1fr;
     }
 }
 

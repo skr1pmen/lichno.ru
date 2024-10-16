@@ -11,7 +11,7 @@ class AuthorizationForm extends Model
 
     public $login;
     public $password;
-    public $rememberMe = true;
+    public $rememberMe = false;
     private $_user = false;
 
     public function rules()

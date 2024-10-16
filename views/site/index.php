@@ -16,7 +16,7 @@
                 <a href="/user"><?= Yii::$app->user->identity->username ?></a>
             <?php endif; ?>
         </div>
-        <video src="images/main_banner.mp4" autoplay playsinline muted></video>
+        <video src="images/main_banner.mp4" autoplay playsinline muted preload="auto" poster="images/main_banner.webp"></video>
     </div>
     <div class="bottom">
         <input type="text" placeholder="Поиск">
@@ -214,16 +214,19 @@
     </div>
 </div>
 
-<div class="docs">
-    <div class="contacts">
-        <a href="tel:+79371330023">+7 (937) 133-00-23</a>
-        <a href="mailto:aiti-finans@yandex.ru">Почта для связи</a>
+<footer class="footer">
+    <div class="docs">
+        <div class="contacts">
+            <a href="/"><img src="images/logo.png" alt="logo"></a>
+            <a href="tel:+79371330023"><i class="fa-solid fa-phone"></i>  +7 (937) 133-00-23</a>
+            <a href="mailto:Anna.Rom.i@yandex.ru"><i class="fa-solid fa-envelope"></i>  Почта для связи</a>
+        </div>
+        <a href="/docs/policy">Политика конфиденциальности</a>
+        <a href="/docs/offer">Публичная оферта</a>
+        <a href="/docs/Заявление на возврат ден средств.doc">Заявление на возврат денежных средств</a>
     </div>
-    <a href="/docs/policy">Политика конфиденциальности</a>
-    <a href="/docs/offer">Публичная оферта</a>
-    <a href="/docs/Заявление на возврат ден средств.doc">Заявление на возврат денежных средств</a>
-    <div>
-        <span>Реквизиты:</span>
+    <div class="data">
+        <span style="font-weight: 600">Реквизиты:</span>
         <span>Наименование: Индивидуальный предприниматель Романова Анна Игоревна</span>
         <span>Юридический адрес: 414024, Россия, Астраханская обл, г Астрахань, ул Генерала Епишева, д 49а, кв 110</span>
         <span>ИНН: 301700664007</span>
@@ -235,7 +238,7 @@
         <span>Корреспондентский счет банка: 30101810145250000974</span>
         <span>Юридический адрес банка: 127287, г. Москва, ул. Хуторская 2-я, д. 38А, стр. 26</span>
     </div>
-</div>
+</footer>
 
 <script type="text/javascript">
     const checkSize = () => {
