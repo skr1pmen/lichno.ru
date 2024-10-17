@@ -466,7 +466,7 @@
         border-radius: clamp(0.938rem, 0.5rem + 2.19vw, 3.125rem);
         display: flex;
         flex-direction: column;
-        padding: clamp(0.875rem, 0.675rem + 1vw, 1.875rem)x;
+        padding: clamp(0.875rem, 0.675rem + 1vw, 1.875rem);
         color: var(--secondary-color);
         .views, .responses {
             .filter {
