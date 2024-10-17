@@ -180,9 +180,9 @@ header {
         align-items: center;
 
         .item {
-            width: min(1800px, 90%);
+            width: min(1800px, 100%);
             background: var(--body-color);
-            padding: 30px;
+            padding: clamp(0.938rem, 0.75rem + 0.94vw, 1.875rem);
             display: flex;
             border-radius: clamp(1.25rem, 1.125rem + 0.63vw, 1.875rem);
             gap: 20px;
@@ -193,7 +193,7 @@ header {
                 display: block;
                 width: clamp(6.563rem, 5rem + 7.81vw, 14.375rem);
                 aspect-ratio: 1;
-                border-radius: 14px;
+                border-radius: clamp(0.625rem, 0.575rem + 0.25vw, 0.875rem);
                 background: var(--block-color);
                 overflow: hidden;
             }
@@ -236,6 +236,7 @@ header {
         gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
         background: var(--block-color);
         border-radius: clamp(1.25rem, 1.125rem + 0.63vw, 1.875rem);
+        font-size: clamp(0.875rem, 0.85rem + 0.13vw, 1rem);
         img {
             width: clamp(13.875rem, 13.097rem + 3.77vw, 17.625rem);
             position: relative;
@@ -252,7 +253,7 @@ header {
             width: max-content;
             gap: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
             padding-bottom: 20px;
-            font-size: clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem);
+            font-size: clamp(0.938rem, 0.9rem + 0.19vw, 1.125rem);
         }
         div {
             text-align: center;
@@ -271,16 +272,17 @@ header {
         gap: 10px;
         color: var(--secondary-color);
         padding: clamp(0.5rem, 0.438rem + 0.31vw, 0.813rem);
+        font-size: clamp(0.875rem, 0.85rem + 0.13vw, 1rem);
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .services {
-        .title {
-            margin-bottom: 15px;
-        }
-    }
-}
+/*@media screen and (max-width: 1024px) {*/
+/*    .services {*/
+/*        .title {*/
+/*            margin-bottom: 15px;*/
+/*        }*/
+/*    }*/
+/*}*/
 
 @media screen and (max-width: 768px) {
     .top_users {
@@ -310,9 +312,9 @@ header {
             display: none;
         }
 
-        .title {
-            margin-bottom: 25px;
-        }
+        /*.title {*/
+        /*    margin-bottom: 25px;*/
+        /*}*/
 
         .btn {
             display: none;
