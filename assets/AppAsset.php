@@ -17,6 +17,7 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
+    public $publishOptions = ['forceCopy' => true];
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [

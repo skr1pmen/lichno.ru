@@ -17,7 +17,7 @@
                 <a href="/user/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
             <?php endif; ?>
         </div>
-        <video src="images/main_banner.mp4" autoplay playsinline muted preload="auto" poster="images/main_banner.webp"></video>
+        <video src="images/main_banner.mp44" autoplay playsinline muted preload="auto" poster="images/main_banner.webp"></video>
     </div>
     <div class="bottom">
         <input type="text" placeholder="Поиск">
