@@ -266,8 +266,8 @@
             document.querySelector('.wrapper_mobile').classList.remove('swiper-wrapper')
 
             const swiper = new Swiper('.swiper-banner', {
-                speed: 400,
-                slidesPerView: 'auto', // or 'auto'
+                speed: 600,
+                slidesPerView: '1', // or 'auto'
                 spaceBetween: 30,
                 grabCursor: false,
                 updateOnImagesReady: true,
