@@ -44,7 +44,7 @@ class UserRepository
     {
         $login = "Lichno.com";
         $pass1  = "kCO36aXqnxI7z62EznaV";
-        $invId = date('dmYhis');
+        $invId = rand(1, 2147483647);
         $desc = "Пополнение баланса";
         $isTest = 0;
         $signatureValue = md5("$login:$balance:$invId:$pass1");
