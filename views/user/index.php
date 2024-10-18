@@ -154,24 +154,25 @@ use yii\widgets\ActiveForm;
                             'toggleButton' => ['label' => '<i class="fa-solid fa-plus"></i>', 'class' => 'add'],
                         ]);
                         ?>
-                        <?php $form = ActiveForm::begin([
-                            'options' => [
-                                'class' => 'form-payment',
-                                'enctype' => 'multipart/form-data'
-                            ],
-                            'fieldConfig' => [
-                                'template' => "{label}<br>{input}<br>{error}",
-                                'labelOptions' => ['class' => 'label'],
-                                'inputOptions' => ['class' => 'input'],
-                                'errorOptions' => ['class' => 'error'],
-                            ],
-                        ]) ?>
+<!--                        --><?php //$form = ActiveForm::begin([
+//                            'options' => [
+//                                'class' => 'form-payment',
+//                                'enctype' => 'multipart/form-data'
+//                            ],
+//                            'fieldConfig' => [
+//                                'template' => "{label}<br>{input}<br>{error}",
+//                                'labelOptions' => ['class' => 'label'],
+//                                'inputOptions' => ['class' => 'input'],
+//                                'errorOptions' => ['class' => 'error'],
+//                            ],
+//                        ]) ?>
+                        <script type="text/javascript" src="https://auth.robokassa.ru/Merchant/PaymentForm/FormFLS.js?EncodedInvoiceId=x3kQ9zzQAUKbF9hBDsYhEg&DefaultSum=0"></script>
 
 
-                        <?= $form->field($model, 'payment')->input('number') ?>
-                        <?= Html::submitButton("Пополнить", ['class' => 'btn']) ?>
-
-                        <?php ActiveForm::end() ?>
+<!--                        --><?php //= $form->field($model, 'payment')->input('number') ?>
+<!--                        --><?php //= Html::submitButton("Пополнить", ['class' => 'btn']) ?>
+<!---->
+<!--                        --><?php //ActiveForm::end() ?>
                         <?php
                         Modal::end();
                         ?>
