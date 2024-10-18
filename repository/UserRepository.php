@@ -42,16 +42,16 @@ class UserRepository
 
     public static function replenishmentBalance($balance)
     {
-        $login = getenv('MerchantLogin');
-        $pass1  = getenv('Pass1_test');
-        $invId = md5(date('dmYhis'));
-        $desc = "Пополнение баланса (Тестовое)";
+        $login = "Lichno.com";
+        $pass1  = "kCO36aXqnxI7z62EznaV";
+        $invId = date('dmYhis');
+        $desc = "Пополнение баланса";
         $isTest = 0;
         $signatureValue = md5("$login:$balance:$invId:$pass1");
 
-        Yii::$app->response->redirect("https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=
-        $login&OutSum=$balance&InvId=$invId&Description=$desc&SignatureValue=$signatureValue&IsTest=$isTest");
+        Yii::$app->response->redirect("https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=$login&OutSum=$balance&InvId=$invId&Description=$desc&SignatureValue=$signatureValue&IsTest=$isTest");
     }
+
 
     public static function addingBalance($balance)
     {

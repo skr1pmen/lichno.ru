@@ -41,7 +41,9 @@ class UserController extends Controller
 
         $model = new PaymentForm();
         if ($model->load(\Yii::$app->request->post())) {
-            UserRepository::replenishmentBalance($model->payment);
+            $payment_url = UserRepository::replenishmentBalance($model->payment);
+            var_dump($payment_url);
+//            return $this->redirect($payment_url);
         }
 
         return $this->render('index', ['page' => $page, 'model' => $model]);
