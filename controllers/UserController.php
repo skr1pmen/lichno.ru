@@ -39,11 +39,9 @@ class UserController extends Controller
             }
         }
 
-        if ($page === 'purse' || $page === 'all') {
-            $model = new PaymentForm();
-            if ($model->load(\Yii::$app->request->post())) {
-                UserRepository::replenishmentBalance($model->payment);
-            }
+        $model = new PaymentForm();
+        if ($model->load(\Yii::$app->request->post())) {
+            UserRepository::replenishmentBalance($model->payment);
         }
 
         return $this->render('index', ['page' => $page, 'model' => $model]);
