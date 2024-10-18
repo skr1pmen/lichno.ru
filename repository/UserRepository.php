@@ -46,7 +46,7 @@ class UserRepository
         $pass1  = getenv('Pass1_test');
         $invId = md5(date('dmYhis'));
         $desc = "Пополнение баланса (Тестовое)";
-        $isTest = 1;
+        $isTest = 0;
         $signatureValue = md5("$login:$balance:$invId:$pass1");
 
         Yii::$app->response->redirect("https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=
