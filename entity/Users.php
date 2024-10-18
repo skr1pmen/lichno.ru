@@ -19,6 +19,7 @@ use yii\web\IdentityInterface;
  * @property string description
  * @property integer category_id
  * @property boolean is_executor
+ * @property float balance
  */
 class Users extends ActiveRecord implements IdentityInterface
 {

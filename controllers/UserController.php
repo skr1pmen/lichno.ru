@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\entity\Users;
 use app\models\AuthorizationForm;
+use app\models\PaymentForm;
 use app\models\RegistrationForm;
 use app\repository\UserRepository;
 use Yii;
@@ -38,7 +39,14 @@ class UserController extends Controller
             }
         }
 
-        return $this->render('index', ['page' => $page]);
+        if ($page === 'purse' || $page === 'all') {
+            $model = new PaymentForm();
+            if ($model->load(\Yii::$app->request->post())) {
+                UserRepository::replenishmentBalance($model->payment);
+            }
+        }
+
+        return $this->render('index', ['page' => $page, 'model' => $model]);
     }
 
     public function actionAuthorization()

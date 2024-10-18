@@ -30,7 +30,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/png', 'href' => Yii::g
 <?php $this->beginBody() ?>
 
 <main id="main">
-    <div class="container">
+    <div class="container_">
         <?= $content ?>
     </div>
 </main>

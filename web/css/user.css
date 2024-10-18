@@ -421,10 +421,45 @@
                         border-radius: 50%;
                         border: none;
                         background: var(--block-color);
-                        font-size: 95px;
+                        font-size: 80px;
                         color: #14006A;
                         cursor: pointer;
+                        text-align: center;
                     }
+                    .modal-content{
+                        .modal-title {
+                            color: var(--secondary-color);
+                        }
+                        .form-payment {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 5px;
+                            div {
+                                width: inherit;
+                                color: var(--secondary-color);
+                                .label {
+                                    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+                                }
+                                input {
+                                    width: inherit;
+                                    -webkit-appearance: none;
+                                    -moz-appearance: textfield;
+
+                                    font-size: clamp(0.875rem, 0.511rem + 1.82vw, 1.875rem);
+                                    padding: 14px 20px;
+                                    border-radius: clamp(0.938rem, 0.5rem + 2.19vw, 3.125rem);
+                                    border: none;
+                                    background: var(--body-color);
+                                }
+                                .error {
+                                    color: darkred;
+                                }
+                            }
+                        }
+                    }
+
                 }
                 .btns {
                     display: flex;

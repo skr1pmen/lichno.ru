@@ -1,7 +1,13 @@
 <?php
 /**
  * @var $page
+ * @var $model
  */
+
+use yii\bootstrap5\Modal;
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
 ?>
 
 <div class="<?= $page === 'all' ? 'all_pages' : 'user_page' ?>">
@@ -70,7 +76,7 @@
                     <h3 class="title">Изменить категорию</h3>
                     <div class="categories">
                         <label><input disabled type="checkbox">Астролог</label>
-                        <label><input disabled type="checkbox">Торолог</label>
+                        <label><input disabled type="checkbox">Таролог</label>
                         <label><input disabled type="checkbox">Нумеролог</label>
                         <label><input disabled type="checkbox">Психолог</label>
                         <label><input disabled type="checkbox">Биоэнергетик</label>
@@ -140,9 +146,36 @@
                 <h2 class="title">Баланс</h2>
                 <div class="balance_container">
                     <div class="balance_card">
-                        <h2 class="balance">100,50 <span>₽</span></h2>
+                        <h2 class="balance"><?= Yii::$app->user->identity->balance ?> <span>₽</span></h2>
                         <span>Вы можете пополнить кошелек любым удобным способом</span>
-                        <button class="add">+</button>
+                        <?php
+                        Modal::begin([
+                            'title' => 'Пополнение баланса',
+                            'toggleButton' => ['label' => '<i class="fa-solid fa-plus"></i>', 'class' => 'add'],
+                        ]);
+                        ?>
+                        <?php $form = ActiveForm::begin([
+                            'options' => [
+                                'class' => 'form-payment',
+                                'enctype' => 'multipart/form-data'
+                            ],
+                            'fieldConfig' => [
+                                'template' => "{label}<br>{input}<br>{error}",
+                                'labelOptions' => ['class' => 'label'],
+                                'inputOptions' => ['class' => 'input'],
+                                'errorOptions' => ['class' => 'error'],
+                            ],
+                        ]) ?>
+
+
+                        <?= $form->field($model, 'payment')->input('number') ?>
+                        <?= Html::submitButton("Пополнить", ['class' => 'btn']) ?>
+
+                        <?php ActiveForm::end() ?>
+                        <?php
+                        Modal::end();
+                        ?>
+<!--                        <button class="add">+</button>-->
                     </div>
                     <?php if ($page !== 'all'): ?>
                         <div class="btns">

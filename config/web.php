@@ -53,7 +53,6 @@ $config = [
             ],
         ],
         'assetManager' => [
-            'linkAssets' => true,
             'appendTimestamp' => true,
         ],
     ],
